@@ -4,6 +4,176 @@
   box-sizing: border-box;
 
   font-family: sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+}
+
+button,
+a {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1141.8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-phone {
+  display: none;
+}
+
+.container-continue {
+  width: 100%;
+  min-height: 34rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-group {
+  width: 100%;
+  min-height: 19rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+
+  background-color: #fff;
+}
+
+.container-logo img {
+  height: 3rem;
+}
+
+.container-profile {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-profile img {
+  border-radius: 100%;
+  height: 6rem;
+}
+
+.container-profile button {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.container-profile a {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.container-switchAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 0;
+
+  background-color: #fff;
+}
+
+.container-switchAccount p {
+  color: rgb(160, 160, 160);
+}
+
+.container-switchAccount a {
+  color: #0095f6;
+}
+
+.container-getTheApp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-getTheApp p {
+  width: 100%;
+  text-align: center;
+}
+
+.container-getTheApp-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container-getTheApp button {
+  width: 140px;
+  height: 42px;
+  background: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container-getTheApp .appleStore {
+  background-image: url("../images/apple-button.png");
+}
+
+.container-getTheApp .playStore {
+  background-image: url("../images/googleplay-button.png");
+}
+
+@media (min-width: 651px) {
+  body {
+    background-color: rgb(243, 243, 243);
+  }
+
+  .container-phone {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-phone img {
+    height: 50rem;
+    object-fit: contain;
+  }
+
+  .container-continue {
+    width: 50%;
+  }
+
+  .container-switchAccount,
+  .container-group {
+    border: 1px solid lightgray;
+  }
 }
